@@ -5,9 +5,10 @@
 package retryupdate_test
 
 import (
+	reflect "reflect"
+
 	gomock "github.com/golang/mock/gomock"
 	kvapi "gitlab.com/slon/shad-go/retryupdate/kvapi"
-	reflect "reflect"
 )
 
 // MockClient is a mock of Client interface

@@ -1,10 +1,11 @@
 package cond
 
 import (
-	"gitlab.com/slon/shad-go/tools/testtool"
 	"sync"
 	"testing"
 	"time"
+
+	"gitlab.com/slon/shad-go/tools/testtool"
 )
 
 func TestCondSignal(t *testing.T) {

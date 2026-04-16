@@ -1,16 +1,16 @@
 package yamlembed
 
 type Foo struct {
-	A string
-	p int64
+	A string `yaml:"aa"`
+	p int64  `yaml:"-"`
 }
 
 type Bar struct {
-	I      int64
-	B      string
-	UpperB string
-	OI     []string
-	F      []any
+	I      int64    `yaml:"-"`
+	B      string   `yaml:"b"`
+	UpperB string   `yaml:"-"`
+	OI     []string `yaml:"oi,omitempty,flow"`
+	F      []any    `yaml:"f,omitempty,flow"`
 }
 
 type Baz struct {
